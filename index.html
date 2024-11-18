@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FencingGear - Магазин фехтовальной экипировки</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 1em;
+            text-align: center;
+        }
+        .header-content {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .logo {
+            width: 50px;
+            height: auto;
+        }
+        nav {
+            background: #444;
+            padding: 1em;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 10px;
+            text-decoration: none;
+            padding: 10px 15px;
+            transition: background-color 0.3s ease;
+        }
+        nav a:hover {
+            background-color: #666;
+            color: #fff;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 1em;
+        }
+        .section {
+            margin: 2em 0;
+        }
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .product {
+            background: #fff;
+            border: 1px solid #ddd;
+            padding: 1em;
+            flex: 1 1 calc(33.333% - 40px);
+            box-sizing: border-box;
+        }
+        .product img {
+            width: 100%;
+            height: auto;
+        }
+        .price-list table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .price-list th, .price-list td {
+            padding: 10px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+            margin-top: 2em;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="header-content">
+        <img src="images/logo.jpg" alt="Логотип FencingGear" class="logo">
+        <h1>FencingGear</h1>
+    </div>
+    <p>Откройте для себя фехтование с лучшим снаряжением! Качество и безопасность – наш приоритет.</p>
+</header>
+
+<nav>
+    <a href="#about">О компании</a>
+    <a href="#catalog">Каталог</a>
+    <a href="#price-list">Прайс-лист</a>
+    <a href="#contact">Контакты</a>
+</nav>
+
+<div class="container">
+
+    <!-- О компании -->
+    <section id="about" class="section">
+        <h2>О компании</h2>
+        <p>FencingGear – ваш надежный поставщик фехтовальной экипировки. Мы предлагаем только сертифицированное снаряжение, соответствующее всем стандартам безопасности, чтобы сделать фехтование доступным и безопасным для каждого.</p>
+    </section>
+
+    <!-- Каталог товаров -->
+    <section id="catalog" class="section">
+        <h2>Каталог</h2>
+        <div class="products">
+            <div class="product">
+                <img src="images/mask.jpg" alt="Фехтовальная маска">
+                <h3>Маска защитная X1</h3>
+                <p>Высококачественная маска для надежной защиты.</p>
+            </div>
+            <div class="product">
+                <img src="images/sword.jpg" alt="Фехтовальная рапира">
+                <h3>Рапира классическая</h3>
+                <p>Классическая рапира для соревнований и тренировок.</p>
+            </div>
+            <div class="product">
+                <img src="images/glove.jpg" alt="Фехтовальная перчатка">
+                <h3>Перчатка защитная</h3>
+                <p>Комфортная перчатка для дополнительной защиты вооруженной руки.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Прайс-лист -->
+    <section id="price-list" class="section">
+        <h2>Прайс-лист</h2>
+        <div class="price-list">
+            <table>
+                <tr>
+                    <th>Категория</th>
+                    <th>Товар</th>
+                    <th>Цена (руб.)</th>
+                </tr>
+                <tr>
+                    <td>Маски</td>
+                    <td>Маска защитная X1</td>
+                    <td>5000</td>
+                </tr>
+                <tr>
+                    <td>Оружие</td>
+                    <td>Рапира классическая</td>
+                    <td>7000</td>
+                </tr>
+                <tr>
+                    <td>Перчатки</td>
+                    <td>Перчатка защитная</td>
+                    <td>1500</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+    <!-- Контакты -->
+    <section id="contact" class="section">
+        <h2>Контакты</h2>
+        <p>Мы находимся по адресу: г. Брянск, ул. Ошибка, д. 404</p>
+        <p>Телефон: +7 (zzz) vvv-zz-vv</p>
+        <p>Email: info@fencingworld.ru</p>
+    </section>
+
+</div>
+
+<footer>
+    <p>&copy; 2024 FencingGear. Все права защищены.</p>
+</footer>
+
+</body>
+</html>
